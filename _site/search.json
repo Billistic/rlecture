@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "21201797-Homework_Git",
+    "section": "",
+    "text": "The purpose of this document is to plot from any common R package data-set; here we have choosen the IRIS data-set used extensively throughout the course material to date. We will use IRIS to view Petal variance by species."
+  },
+  {
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "21201797-Homework_Git",
+    "section": "",
+    "text": "The purpose of this document is to plot from any common R package data-set; here we have choosen the IRIS data-set used extensively throughout the course material to date. We will use IRIS to view Petal variance by species."
+  },
+  {
+    "objectID": "index.html#dataset-structure",
+    "href": "index.html#dataset-structure",
+    "title": "21201797-Homework_Git",
+    "section": "Dataset & Structure",
+    "text": "Dataset & Structure\nWe have chosen IRIS as the data-set to explore in this example document. The data-set contains 150 observations, each representing an individual flower of one of three differing species: Iris Setosa, Iris Versicolour, and Iris Virginica.\nBelow outlines the recorded attributes of each entry.\n\nSepal.length - Sepal Length in centimeters.\nSepal.Width - Sepal width in centimeters.\nPetal.Length - Petal length in centimeters.\nPetal.Width - Petal width in centimeters.\nSpecies - The flower species.\n\nAn example of the data can be seen below:\n\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa"
+  },
+  {
+    "objectID": "index.html#visualisation",
+    "href": "index.html#visualisation",
+    "title": "21201797-Homework_Git",
+    "section": "Visualisation",
+    "text": "Visualisation\n\n\n\n\n\n\n\n\n\nFrom the initial inspectiion we can already distinguish a pattern within Setosa flower, this is easily identifiable based on its short and wide sepal dimensions. However, sepal width and length still overlap between the Versicolor and Virginica types. Further analysis in the graph below reveals a comparison when looking at petal dimensions and groupings.\n\n\n\n\n\n\n\n\n\nWe can now clearly distinguish 3 exact groupings based on Petal dimensions of each species ranging in increasing size order from Setosa to Virginica. The combination of Sepal and Petal dimensions could potentially be later used for investigations into common classification problems in identifying flower types."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

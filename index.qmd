@@ -1,0 +1,57 @@
+---
+title: "21201797-Homework_Git" 
+subtitle: "Topic 2: Homework for R Qmd <br> " 
+footer: "STAT40830 Topic 2: Literate programming for R - Example document"  
+format: html 
+editor: visual
+---
+
+## Purpose
+
+The purpose of this document is to plot from any common R package data-set; here we have choosen the IRIS data-set used extensively throughout the course material to date. We will use IRIS to view Petal variance by species.
+
+## Dataset & Structure
+
+We have chosen IRIS as the data-set to explore in this example document. The data-set contains 150 observations, each representing an individual flower of one of three differing species: *Iris Setosa, Iris Versicolour*, and *Iris Virginica*.
+
+Below outlines the recorded attributes of each entry.
+
+1.  **Sepal.length** - Sepal Length in centimeters.
+2.  **Sepal.Width** - Sepal width in centimeters.
+3.  **Petal.Length** - Petal length in centimeters.
+4.  **Petal.Width** - Petal width in centimeters.
+5.  **Species** - The flower species.
+
+An example of the data can be seen below:
+
+```{r}
+#| label: Iris-evaluation 
+#| echo: false  
+
+# Load the iris dataset 
+data(iris)  
+# Display the first few rows of the dataset 
+head(iris)
+```
+
+## Visualisation
+
+```{r}
+#| label: Iris-visualisation-Sepal 
+#| echo: false  
+
+library(ggplot2)  
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +   geom_point(size = 3) + labs(title = "Scatter Plot of Sepal Dimensions",        x = "Sepal Length (cm)", y = "Sepal Width (cm)") + theme_minimal()
+```
+
+From the initial inspectiion we can already distinguish a pattern within Setosa flower, this is easily identifiable based on its short and wide sepal dimensions. However, sepal width and length still overlap between the Versicolor and Virginica types. Further analysis in the graph below reveals a comparison when looking at petal dimensions and groupings.
+
+```{r}
+#| label: Iris-visualisation-Petal 
+#| echo: false  
+
+library(ggplot2)  
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +   geom_point(size = 3) + labs(title = "Scatter Plot of Petal Dimensions",        x = "Petal Length (cm)",y = "Petal Width (cm)") + theme_minimal()
+```
+
+We can now clearly distinguish 3 exact groupings based on Petal dimensions of each species ranging in increasing size order from Setosa to Virginica. The combination of Sepal and Petal dimensions could potentially be later used for investigations into common classification problems in identifying flower types.
