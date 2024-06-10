@@ -58,4 +58,4 @@ We can now clearly distinguish 3 exact groupings based on Petal dimensions of ea
 
 ## Git Repository
 
-We have added this example line to register an additional GIT commit past the initial.
+We have added this example line to register an additional GIT commit past the initial containing this new section as well as formatting changes throughout the file.
